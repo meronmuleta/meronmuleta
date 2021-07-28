@@ -1,0 +1,262 @@
+* {
+  box-sizing:border-box;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  
+  
+}
+.navbar {
+  background-color: rgb(247, 212, 236);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 90;
+  width: 100%;
+  padding: 50px;
+}
+#navbar__logo {
+  background-image: linear-gradient(
+    to top,
+    rgb(248, 21, 127) 0%,
+    rgb(177, 99, 177) 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: rgb(96, 20, 219);
+  font-size: xx-large;
+}
+.fa-gem {
+  margin-right: 0.5rem;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar__links {
+  color: rgb(218, 22, 175);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+}
+.navbar__links:hover {
+  color: purple;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.main {
+  background-image: url("oreo.jpg");
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100em, 200em;
+}
+.main__container {
+  background-image: linear-gradient(
+    to top,
+    rgb(21, 104, 129) 0%,
+    rgb(204, 95, 204) 100%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: xx-large;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 600px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 100px;
+}
+.main__container:hover {
+  color: blueviolet;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.myhome {
+  background-image: url("oreo.jpg");
+  display: flex;
+  align-items: center;
+  height: 700px;
+  width: auto;
+}
+img {
+  width: 250px;
+  border-radius: 100px;
+  margin: -370px 20em 0 550px;
+}
+.container2 {
+  background-image: linear-gradient(
+    to top,
+    rgb(103, 38, 207) 0%,
+    rgb(243, 29, 39) 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: large;
+  width: 100%;
+  margin-left: -530px;
+}
+.container3 {
+  background-image: linear-gradient(to top, rgb(103, 38, 207) 0%, red 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: medium;
+  width: 100%;
+  margin-left: -1200px;
+  margin-bottom: -380px;
+}
+
+#foods {
+  display: grid;
+  background-image: url("oreo.jpg");
+  width: auto;
+  margin: 0;
+  align-items: stretch;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 2fr);
+  grid-auto-flow: row dense;
+  padding: 0%;
+  grid-gap: 10px;
+}
+#foods h1 {
+  display: inline-block;
+  position: relative;
+  height: auto;
+  width: 1000px;
+  margin: 4% 0 0 14%;
+  text-align: center;
+  font-size: 2.8em;
+  font-weight: 650;
+  letter-spacing: 1.5px;
+  color: rgb(172, 16, 120);
+  border-left: 5px solid purple;
+  border-right: 5px solid purple;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#foods img {
+  width: 100%;
+  height: 100%;
+  border-radius: 150px;
+  margin: 0;
+  margin-top: -150px;
+  object-fit: cover;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+  filter: brightness(1);
+  transition: 0.3s ease-in-out;
+}
+#foods img:hover,
+#foods img::before {
+  filter: brightness(0.2) grayscale(1);
+}
+
+@media only screen and(max-width:768px) {
+  #foods {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  #foods img {
+    display: block;
+  }
+}
+@media only screen and(max-width:320px) {
+  #foods {
+    display: block;
+  }
+  #foods img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 2% 0;
+    filter: brightness(1) grayscale(0);
+  }
+}
+.inputs {
+  background-image: url("oreo.jpg");
+  display: flex;
+  margin: 0;
+  align-items: initial;
+  width: auto;
+  height: 700px;
+}
+.inputs h1 {
+  background-image: linear-gradient(
+    to top,
+    rgb(247, 17, 189) 0%,
+    rgb(192, 28, 192) 100%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  margin-left: 40%;
+  width: 200px;
+  padding: 15px;
+  text-transform: uppercase;
+}
+.inputs .myinputs {
+  display: grid;
+  grid-gap: 10px;
+  margin: 180px 0 0 -280px;
+}
+
+.contactdiv ul {
+  width: 100%;
+  display: flex;
+  margin: 600px 0 0 -300px;
+  padding: 15px;
+  justify-content: center;
+
+  list-style: none;
+}
+.contactdiv li a {
+  margin-bottom: -100px;
+  text-decoration: none;
+  padding: 8px 25px;
+
+  background-image: linear-gradient(
+    to top,
+    rgb(173, 32, 126) 0%,
+    rgb(31, 171, 214) 100%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 12px 30px;
+}
+.contactdiv li a:hover {
+  font-weight: bolder;
+  padding: 8px 25px;
+}
